@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeView">
+            <connections>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-8f-ELf">
+                    <rect key="frame" x="20" y="500" width="280" height="50"/>
+                    <color key="backgroundColor" red="0.047058823529411764" green="0.36470588235294116" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionLogin:" destination="-1" eventType="touchUpInside" id="DaA-Zf-XSa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-Wf-v14">
+                    <rect key="frame" x="20" y="442" width="280" height="50"/>
+                    <color key="backgroundColor" red="0.15294117647058825" green="0.65098039215686276" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6ID-e8-ESG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionRegister:" destination="-1" eventType="touchUpInside" id="60O-Xg-COz"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="JRp-OV-lP5">
+                    <rect key="frame" x="95" y="27" width="130" height="115"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hydro Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-TB-88e">
+                    <rect key="frame" x="117" y="150" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7Wf-8f-ELf" secondAttribute="bottom" constant="18" id="4ly-2v-fKX"/>
+                <constraint firstAttribute="trailing" secondItem="Rka-Wf-v14" secondAttribute="trailing" constant="20" id="8zA-0P-WA8"/>
+                <constraint firstAttribute="trailing" secondItem="7Wf-8f-ELf" secondAttribute="trailing" constant="20" id="B0g-23-mtR"/>
+                <constraint firstItem="bpr-TB-88e" firstAttribute="top" secondItem="JRp-OV-lP5" secondAttribute="bottom" constant="8" id="H2p-cn-DXO"/>
+                <constraint firstAttribute="bottom" secondItem="Rka-Wf-v14" secondAttribute="bottom" constant="76" id="MVQ-Bu-Vxm"/>
+                <constraint firstItem="JRp-OV-lP5" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="95" id="QbF-xB-ceG"/>
+                <constraint firstItem="JRp-OV-lP5" firstAttribute="centerX" secondItem="Rka-Wf-v14" secondAttribute="centerX" id="ZMZ-Vt-Ebd"/>
+                <constraint firstItem="7Wf-8f-ELf" firstAttribute="top" secondItem="Rka-Wf-v14" secondAttribute="bottom" constant="8" symbolic="YES" id="dXf-Dj-IXn"/>
+                <constraint firstItem="bpr-TB-88e" firstAttribute="centerX" secondItem="JRp-OV-lP5" secondAttribute="centerX" id="gJg-a0-PkH"/>
+                <constraint firstItem="Rka-Wf-v14" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="hme-3O-lsS"/>
+                <constraint firstItem="JRp-OV-lP5" firstAttribute="top" secondItem="1" secondAttribute="top" constant="27" id="i46-RE-c1M"/>
+                <constraint firstItem="Rka-Wf-v14" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="vf0-UC-VeO"/>
+                <constraint firstAttribute="trailing" secondItem="JRp-OV-lP5" secondAttribute="trailing" constant="95" id="wem-98-59C"/>
+                <constraint firstItem="7Wf-8f-ELf" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="yAZ-d6-dXh"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="brain" width="190" height="175"/>
+    </resources>
+</document>
